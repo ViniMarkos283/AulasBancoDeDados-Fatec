@@ -24,8 +24,6 @@ BEGIN
     INNER JOIN inserted ON Produto.IDProduto = inserted.IDProduto;
 END;
 
-
-
 /*
 91. Alterar a trigger (“tr_AtualizaEstoque_I”) criada no exercício anterior. Acrescentar a seguinte regra:
 Se  ( Produto.PrecoUnitMinProduto > Movimentacao.PrecoUnitMov )
@@ -37,6 +35,7 @@ Então
 Calcular 
      Produto.PrecoUnitMedProduto = (Produto.PrecoUnitMinProduto + Produto.PrecoUnitMaxProduto)/2 
 */
+
 ALTER TRIGGER tr_AtualizaEstoque_I
 ON Movimentacao
 AFTER INSERT
@@ -62,6 +61,7 @@ END;
      Se Movimentacao.Tipo ='S' (saída)
            Somar a Movimentacao.QtdeMov em Produto.QtdeProduto
 */
+
 CREATE TRIGGER tr_AtualizaEstoque_D
 ON Movimentacao
 AFTER DELETE
@@ -76,7 +76,6 @@ BEGIN
     WHERE IDProduto IN (SELECT IDProduto FROM deleted);
 END;
 
-
 /*
 93. Criar uma trigger de “Update” para a tabela "Movimentacao" chamada “tr_AtualizaEstoque_U”
 –      Quando for excluida uma linha na tabela “Movimentacao”
@@ -89,6 +88,7 @@ END;
            Somar a antiga Movimentacao.QtdeMov antiga em Produto.QtdeProduto
            Subtrair a nova Movimentacao.QtdeMov em Produto.QtdeProduto
 */
+
 CREATE TRIGGER tr_AtualizaEstoque_U
 ON Movimentacao
 AFTER UPDATE
