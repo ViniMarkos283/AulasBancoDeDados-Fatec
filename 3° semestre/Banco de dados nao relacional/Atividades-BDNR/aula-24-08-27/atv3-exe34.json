@@ -1,0 +1,20 @@
+{
+  "Cpf": "12345678900",
+  "Primeiro_Nome": "Edson",
+  "Nome_Meio": "da Silva",
+  "Ultimo_Nome": "Oliveira",
+  "Data_Nascimento": "01-04-1990",
+  "Endereco": "Rua dos dados, 999",
+  "Salario": 8000.00,
+  "Sexo": "M",
+  "Cpf_Supervisor": "98765432100",
+  "Numero_Departamento": "123",
+  "Dependentes": [
+    {
+      "Nome_Dependete": "Junin Silva",
+      "Sexo": "F",
+      "Data_Nascimento": "18-04-2016",
+      "Parentesco": "Filho"
+    }
+  ]
+}
