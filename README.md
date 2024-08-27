@@ -1,2 +1,4 @@
-# Bando-de-Dados-Relacional-2_Sem
+# Aulas-Banco-de-Dados-Fatec
+
+[descrição a definir]
  
