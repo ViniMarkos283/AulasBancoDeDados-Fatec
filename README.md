@@ -3,13 +3,13 @@
 
 # linguagens usadas
 [![My Skills](https://skillicons.dev/icons?i=mysql,js&theme=light&perline=3)](https://skillicons.dev)
-- MySQL
+- SQL
 - JSON
 
 # IDEs utlizadas:
 [![My Skills](https://skillicons.dev/icons?i=mysql,vscode,mongodb)](https://skillicons.dev)
+- SSMS (SQL Server Management Studio)
 - Visual Studio Code
-- SSMS
 - mongoDB
 
 # Organização dos códigos:
